@@ -7,7 +7,7 @@
 
 import Foundation
 
-let eze = Stacks(max: 5, contents: [1,2,3,4,5])
-print(eze.contents)
-eze.pop()
-print(eze.contents)
+let eze = HashTable(size: 3)
+print(eze.hash_function(key: "eze"))
+eze.insert(value: "eze")
+print(eze.find(key: "eze"))
