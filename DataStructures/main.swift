@@ -25,12 +25,14 @@ fifth.left = sixth
 fifth.right = seventh
 
 
-print(tree.contains(target: "A"))    // True
-print(tree.contains(target: "B"))    // False
-print(tree.contains(target: "C"))    // False
-print(tree.contains(target: "L"))    // False
-print(tree.contains(target: "M"))    // True
-print(tree.contains(target: "N"))    // False
-print(tree.contains(target: "X"))    // False
-print(tree.contains(target: "Y"))    // False
-print(tree.contains(target: "Z"))    // True
+//print(tree.contains(target: "A"))    // True
+//print(tree.contains(target: "B"))    // False
+//print(tree.contains(target: "C"))    // False
+//print(tree.contains(target: "L"))    // False
+//print(tree.contains(target: "M"))    // True
+//print(tree.contains(target: "N"))    // False
+//print(tree.contains(target: "X"))    // False
+//print(tree.contains(target: "Y"))    // False
+//print(tree.contains(target: "Z"))    // True
+tree.add(subject: "Eze")
+print(tree.contains(target: "Eze"))

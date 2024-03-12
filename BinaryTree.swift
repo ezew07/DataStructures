@@ -10,11 +10,11 @@ import Foundation
 class BinaryTree {
     var root: Node?
 
-    func contains(target: String) -> Bool {
+    func contains(target: String) -> (contained: Bool, node: Node?) {
         var currentNode = root
         while currentNode != nil{
             if currentNode!.value == target{
-                return true
+                return (contained: true, node: currentNode)
             }
             if target.lowercased() < currentNode!.value.lowercased() {
                 currentNode = currentNode!.left
@@ -23,15 +23,39 @@ class BinaryTree {
                 currentNode = currentNode!.right
             }
         }
-        return false
+        return (contained: false, node: nil)
     }
 
-    
-    
-    
-    func add(value: String) {
-        // Implement this method
+    func add(subject: String) {
+        var currentNode: Node? = root
+        while currentNode != nil {
+            if subject < currentNode!.value {
+                if currentNode!.left == nil {
+                    currentNode!.left = Node(value: subject)
+                    return
+                }
+                currentNode = currentNode?.left
+            }
+            else if subject > currentNode!.value {
+                if currentNode!.right == nil {
+                    currentNode!.right = Node(value: subject)
+                    return
+                }
+                currentNode = currentNode?.right
+            }
+        }
     }
+    
+    func delete(target: String) {
+        var currentNode = contains(target: target)
+        
+        
+        
+        
+        
+    }
+    
+    
 }
 
 
