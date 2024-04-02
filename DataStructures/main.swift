@@ -9,30 +9,34 @@ import Foundation
 
 let tree = BinaryTree()
 
-let first = Node(value: "M")
-let second = Node(value: "D")
-let third = Node(value: "A")
-let fourth = Node(value: "F")
-let fifth = Node(value: "S")
-let sixth = Node(value: "P")
-let seventh = Node(value: "Z")
+let first = BSTNode(value: "M")
+let second = BSTNode(value: "D")
+let third = BSTNode(value: "A")
+let fourth = BSTNode(value: "F")
+let fifth = BSTNode(value: "S")
+let sixth = BSTNode(value: "P")
+let seventh = BSTNode(value: "Z")
 tree.root = first
 first.left = second
-second.left = third
-second.right = fourth
+first.right = fifth
+//second.left = third
+//second.right = fourth
 first.right = fifth
 fifth.left = sixth
 fifth.right = seventh
 
 
-//print(tree.contains(target: "A"))    // True
-//print(tree.contains(target: "B"))    // False
-//print(tree.contains(target: "C"))    // False
-//print(tree.contains(target: "L"))    // False
-//print(tree.contains(target: "M"))    // True
-//print(tree.contains(target: "N"))    // False
-//print(tree.contains(target: "X"))    // False
-//print(tree.contains(target: "Y"))    // False
-//print(tree.contains(target: "Z"))    // True
-tree.add(subject: "Eze")
-print(tree.contains(target: "Eze"))
+//print(tree.contains(targetValue: "A"))    // True
+//print(tree.contains(targetValue: "B"))    // False
+//print(tree.contains(targetValue: "C"))    // False
+//print(tree.contains(targetValue: "L"))    // False
+//print(tree.contains(targetValue: "M"))    // True
+//print(tree.contains(targetValue: "N"))    // False
+//print(tree.contains(targetValue: "X"))    // False
+//print(tree.contains(targetValue: "Y"))    // False
+//print(tree.contains(targetValue: "Z"))    // True
+//print(tree.contains(targetValue: "eze"))
+
+tree.delete(key: "D")
+print(tree.contains(targetValue: "D"))
+

@@ -11,6 +11,7 @@
 		D91F5EB52B84CA6700BC9046 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91F5EB42B84CA6700BC9046 /* main.swift */; };
 		D91F5EBC2B84CC4500BC9046 /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91F5EBB2B84CC4500BC9046 /* Stacks.swift */; };
 		D94F401F2B8E0B0B002E5888 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94F401E2B8E0B0B002E5888 /* HashTable.swift */; };
+		F09A96342BBC74000032F155 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09A96332BBC74000032F155 /* temp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		D91F5EB42B84CA6700BC9046 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		D91F5EBB2B84CC4500BC9046 /* Stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
 		D94F401E2B8E0B0B002E5888 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
+		F09A96332BBC74000032F155 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +49,6 @@
 		D91F5EA82B84CA6700BC9046 = {
 			isa = PBXGroup;
 			children = (
-				D912CD9A2B9F01FB00621FCE /* BinaryTree.swift */,
 				D91F5EB32B84CA6700BC9046 /* DataStructures */,
 				D91F5EB22B84CA6700BC9046 /* Products */,
 			);
@@ -64,9 +65,11 @@
 		D91F5EB32B84CA6700BC9046 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				F09A96332BBC74000032F155 /* temp.swift */,
 				D91F5EB42B84CA6700BC9046 /* main.swift */,
 				D91F5EBB2B84CC4500BC9046 /* Stacks.swift */,
 				D94F401E2B8E0B0B002E5888 /* HashTable.swift */,
+				D912CD9A2B9F01FB00621FCE /* BinaryTree.swift */,
 			);
 			path = DataStructures;
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 				D91F5EBC2B84CC4500BC9046 /* Stacks.swift in Sources */,
 				D94F401F2B8E0B0B002E5888 /* HashTable.swift in Sources */,
 				D91F5EB52B84CA6700BC9046 /* main.swift in Sources */,
+				F09A96342BBC74000032F155 /* temp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
